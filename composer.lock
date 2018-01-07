@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c58947b517bc8f932cc9dabfeede4bf",
+    "content-hash": "6bdde1d25c293c881d65f2a674dd1658",
     "packages": [
         {
             "name": "for/http-middleware-psr15-adapter",
-            "version": "dev-master",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/friends-of-reactphp/http-middleware-psr15-adapter.git",
-                "reference": "196156dd2c4b1f8692a3ad792f6c5c26f891e694"
+                "reference": "78aa8073def02e6f74345de6ca4d3213f6d8ef4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/friends-of-reactphp/http-middleware-psr15-adapter/zipball/196156dd2c4b1f8692a3ad792f6c5c26f891e694",
-                "reference": "196156dd2c4b1f8692a3ad792f6c5c26f891e694",
+                "url": "https://api.github.com/repos/friends-of-reactphp/http-middleware-psr15-adapter/zipball/78aa8073def02e6f74345de6ca4d3213f6d8ef4a",
+                "reference": "78aa8073def02e6f74345de6ca4d3213f6d8ef4a",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "psr15",
                 "reactphp"
             ],
-            "time": "2018-01-07T00:36:34+00:00"
+            "time": "2018-01-07T15:57:32+00:00"
         },
         {
             "name": "http-interop/http-factory",
@@ -4295,9 +4295,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "for/http-middleware-psr15-adapter": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
