@@ -8,9 +8,9 @@ use Middlewares\ClientIp;
 use Middlewares\Expires;
 use Middlewares\ResponseTime;
 use Middlewares\Uuid;
-use Monolog\Logger;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
 use function Composed\package;
 
@@ -26,7 +26,7 @@ final class Factory
         'access_log_format' => '%a %l %u %t "%r" %>s %b "%{Referer}i" "%{User-Agent}i"',
     ];
 
-    public static function construct(LoopInterface $loop, Logger $logger, array $options = []): GroupedPSR15Middleware
+    public static function construct(LoopInterface $loop, LoggerInterface $logger, array $options = []): GroupedPSR15Middleware
     {
         $options = array_merge(self::DEFAULT_OPTIONS, $options);
         $expires = require package('middlewares/cache')->getPath('src/expires_defaults.php');

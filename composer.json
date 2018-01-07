@@ -18,10 +18,11 @@
         "middlewares/filesystem": "^0.5.0",
         "middlewares/response-time": "^0.5.0",
         "middlewares/uuid": "^0.6.0",
-        "monolog/monolog": "^1.23"
+        "psr/log": "^1.0"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^4.2"
+        "api-clients/test-utilities": "^4.2",
+        "monolog/monolog": "^1.23"
     },
     "autoload": {
         "psr-4": {
