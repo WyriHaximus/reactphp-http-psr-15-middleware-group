@@ -51,6 +51,7 @@ final class Factory
                     return [
                         'request-id' => $request->getHeaderLine('X-Uuid'),
                         'response-time' => $response->getHeaderLine('X-Response-Time'),
+                        'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
                         'client-ip' => $request->getAttribute('client-ip'),
                     ];
                 })
