@@ -9,7 +9,16 @@
         }
     ],
     "require": {
-        "php": "^7.0"
+        "php": "^7.0",
+        "for/http-middleware-psr15-adapter": "dev-master",
+        "joshdifabio/composed": "^1.0",
+        "middlewares/access-log": "^0.10.0",
+        "middlewares/cache": "^0.5.0",
+        "middlewares/client-ip": "^0.7.0",
+        "middlewares/filesystem": "^0.5.0",
+        "middlewares/response-time": "^0.5.0",
+        "middlewares/uuid": "^0.6.0",
+        "monolog/monolog": "^1.23"
     },
     "require-dev": {
         "api-clients/test-utilities": "^4.2"
