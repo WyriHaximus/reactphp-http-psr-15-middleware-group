@@ -13,7 +13,7 @@ final class FactoryTest extends TestCase
     public function testReturnType()
     {
         $loop = EventLoopFactory::create();
-        $middleware = Factory::construct($loop, new Logger('test-return-type'));
+        $middleware = Factory::create($loop, new Logger('test-return-type'));
 
         self::assertInstanceOf(GroupedPSR15Middleware::class, $middleware);
     }
