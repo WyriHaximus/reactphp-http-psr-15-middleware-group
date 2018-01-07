@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/WyriHaximus/reactphp-http-psr-15-middleware-group.png)](https://travis-ci.org/WyriHaximus/reactphp-http-psr-15-middleware-group)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/react-http-psr-15-middleware-group/v/stable.png)](https://packagist.org/packages/WyriHaximus/react-http-psr-15-middleware-group)
-[![Total Downloads](https://poser.pugx.org/WyriHaximus/react-http-psr-15-middleware-group/downloads.png)](https://packagist.org/packages/WyriHaximus/react-http-psr-15-middleware-group)
+[![Total Downloads](https://poser.pugx.org/WyriHaximus/react-http-psr-15-middleware-group/downloads.png)](https://packagist.org/packages/WyriHaximus/react-http-psr-15-middleware-group/stats)
 [![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-http-psr-15-middleware-group/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-http-psr-15-middleware-group/?branch=master)
 [![License](https://poser.pugx.org/wyrihaximus/react-http-psr-15-middleware-group/license.png)](https://packagist.org/packages/wyrihaximus/react-http-psr-15-middleware-group)
 
