@@ -45,17 +45,17 @@ final class Factory
             withMiddleware(Uuid::class)->
             withMiddleware(AccessLog::class, [$logger], function ($accessLog) use ($options) {
                 return $accessLog->
-                format($options['access_log_format'])->
-                ipAttribute('client-ip')->
-                context(function (ServerRequestInterface $request, ResponseInterface $response) {
-                    return [
-                        'request-id' => $request->getHeaderLine('X-Uuid'),
-                        'response-time' => $response->getHeaderLine('X-Response-Time'),
-                        'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
-                        'client-ip' => $request->getAttribute('client-ip'),
-                        'response-status-code' => $response->getStatusCode(),
-                    ];
-                })
+                    format($options['access_log_format'])->
+                    ipAttribute('client-ip')->
+                    context(function (ServerRequestInterface $request, ResponseInterface $response) {
+                        return [
+                            'request-id' => $request->getHeaderLine('X-Uuid'),
+                            'response-time' => $response->getHeaderLine('X-Response-Time'),
+                            'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
+                            'client-ip' => $request->getAttribute('client-ip'),
+                            'response-status-code' => $response->getStatusCode(),
+                        ];
+                    })
                 ;
             })->
             withMiddleware(ResponseTime::class)->
