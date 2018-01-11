@@ -57,6 +57,7 @@ final class Factory
                             'response-status-code' => $response->getStatusCode(),
                             'response-time' => $response->getHeaderLine('X-Response-Time'),
                             'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
+                            'response-time-float-single-digit' => round((float)substr($response->getHeaderLine('X-Response-Time'), 0, -2), 1),
                         ];
                     })
                 ;
