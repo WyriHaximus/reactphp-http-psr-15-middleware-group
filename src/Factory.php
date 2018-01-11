@@ -49,11 +49,14 @@ final class Factory
                     ipAttribute('client-ip')->
                     context(function (ServerRequestInterface $request, ResponseInterface $response) {
                         return [
+                            'client-ip' => $request->getAttribute('client-ip'),
                             'request-id' => $request->getHeaderLine('X-Uuid'),
+                            'request-method' => $request->getMethod(),
+                            'request-protocol-version' => $request->getProtocolVersion(),
+                            'response-protocol-version' => $response->getProtocolVersion(),
+                            'response-status-code' => $response->getStatusCode(),
                             'response-time' => $response->getHeaderLine('X-Response-Time'),
                             'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
-                            'client-ip' => $request->getAttribute('client-ip'),
-                            'response-status-code' => $response->getStatusCode(),
                         ];
                     })
                 ;
