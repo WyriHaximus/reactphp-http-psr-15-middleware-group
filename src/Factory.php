@@ -58,6 +58,7 @@ final class Factory
                             'response-time' => $response->getHeaderLine('X-Response-Time'),
                             'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
                             'response-time-float-single-digit' => round((float)substr($response->getHeaderLine('X-Response-Time'), 0, -2), 1),
+                            'response-time-int' => (int)round((float)substr($response->getHeaderLine('X-Response-Time'), 0, -2), 0),
                         ];
                     })
                 ;
