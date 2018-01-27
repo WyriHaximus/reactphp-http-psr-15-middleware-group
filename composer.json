@@ -10,14 +10,14 @@
     ],
     "require": {
         "php": "^7.0",
-        "for/http-middleware-psr15-adapter": "^1.0 || ^0.3.1",
+        "for/http-middleware-psr15-adapter": "^1.0",
         "joshdifabio/composed": "^1.0",
-        "middlewares/access-log": "^0.10.0",
-        "middlewares/cache": "^0.5.0",
-        "middlewares/client-ip": "^0.7.0",
-        "middlewares/filesystem": "^0.5.0",
-        "middlewares/response-time": "^0.5.0",
-        "middlewares/uuid": "^0.6.0",
+        "middlewares/access-log": "^1.0",
+        "middlewares/cache": "^1.0",
+        "middlewares/client-ip": "^1.0",
+        "middlewares/filesystem": "^1.0",
+        "middlewares/response-time": "^1.0",
+        "middlewares/uuid": "^1.0",
         "psr/log": "^1.0"
     },
     "require-dev": {
