@@ -6,6 +6,7 @@ use FriendsOfReact\Http\Middleware\Psr15Adapter\GroupedPSR15Middleware;
 use Middlewares\AccessLog;
 use Middlewares\ClientIp;
 use Middlewares\Expires;
+use Middlewares\Https;
 use Middlewares\ResponseTime;
 use Middlewares\Uuid;
 use Psr\Http\Message\ResponseInterface;
@@ -34,7 +35,7 @@ final class Factory
             $expires[$key] = $value;
         }
 
-        return (new GroupedPSR15Middleware($loop))->
+        $middleware = (new GroupedPSR15Middleware($loop))->
             withMiddleware(ClientIp::class, [], function ($clientIp) use ($options) {
                 if (count($options['proxy']) > 0) {
                     return $clientIp->proxy($options['proxy']);
@@ -65,5 +66,13 @@ final class Factory
             })->
             withMiddleware(ResponseTime::class)->
             withMiddleware(Expires::class, [$expires]);
+
+        if (!isset($options['debug']) || (isset($options['debug']) && isset($options['debug']) === false)) {
+            $middleware = $middleware->withMiddleware(Https::class, [], function ($https) {
+                return $https->checkHttpsForward(false);
+            });
+        }
+
+        return $middleware;
     }
 }

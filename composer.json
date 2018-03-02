@@ -16,6 +16,7 @@
         "middlewares/cache": "^1.0",
         "middlewares/client-ip": "^1.0",
         "middlewares/filesystem": "^1.0",
+        "middlewares/https": "^1.0",
         "middlewares/response-time": "^1.0",
         "middlewares/uuid": "^1.0",
         "psr/log": "^1.0"
