@@ -67,7 +67,7 @@ final class Factory
             withMiddleware(ResponseTime::class)->
             withMiddleware(Expires::class, [$expires]);
 
-        if (!isset($options['debug']) || (isset($options['debug']) && isset($options['debug']) === false)) {
+        if (!isset($options['debug']) || (isset($options['debug']) && $options['debug'] === false)) {
             $middleware = $middleware->withMiddleware(Https::class, [], function ($https) {
                 return $https->checkHttpsForward(false);
             });
