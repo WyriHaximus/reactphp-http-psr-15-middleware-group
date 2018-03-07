@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "523ede3fe97c928feb08a5148a556b59",
+    "content-hash": "fd658b193f467122936857306640e682",
     "packages": [
         {
             "name": "for/http-middleware-psr15-adapter",
@@ -534,16 +534,16 @@
         },
         {
             "name": "middlewares/https",
-            "version": "v1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/middlewares/https.git",
-                "reference": "44d82d01dd270e864e50c210f0ebec62f61bcbcb"
+                "reference": "c613bc2c5b269ea2f54178f5d06ea2f25b325df4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/middlewares/https/zipball/44d82d01dd270e864e50c210f0ebec62f61bcbcb",
-                "reference": "44d82d01dd270e864e50c210f0ebec62f61bcbcb",
+                "url": "https://api.github.com/repos/middlewares/https/zipball/c613bc2c5b269ea2f54178f5d06ea2f25b325df4",
+                "reference": "c613bc2c5b269ea2f54178f5d06ea2f25b325df4",
                 "shasum": ""
             },
             "require": {
@@ -577,7 +577,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-01-26T17:53:43+00:00"
+            "time": "2018-03-06T23:10:35+00:00"
         },
         {
             "name": "middlewares/response-time",
@@ -4890,7 +4890,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "middlewares/https": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
