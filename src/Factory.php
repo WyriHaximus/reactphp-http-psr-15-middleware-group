@@ -69,7 +69,7 @@ final class Factory
 
         if (isset($options['hsts']) && $options['hsts'] === true) {
             $middleware = $middleware->withMiddleware(Https::class, [], function ($https) {
-                return $https->redirect(false);
+                return $https->redirect(false)->preload(true)->includeSubdomains(true);
             });
         }
 
