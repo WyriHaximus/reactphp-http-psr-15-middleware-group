@@ -24,7 +24,7 @@ final class Factory
         'proxy' => [
             '127.0.0.1',
         ],
-        'access_log_format' => '%a %l %u %D "%r" %>s %b "%{Referer}i" "%{User-Agent}i"',
+        'access_log_format' => '%a %l %u %Dms "%r" %>s %b "%{Referer}i" "%{User-Agent}i"',
     ];
 
     public static function create(LoopInterface $loop, LoggerInterface $logger, array $options = []): GroupedPSR15Middleware
