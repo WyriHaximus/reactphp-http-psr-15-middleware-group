@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^7.0",
+        "php": "^7.1",
         "for/http-middleware-psr15-adapter": "^1.0",
         "joshdifabio/composed": "^1.0",
         "middlewares/access-log": "^1.0",
@@ -38,7 +38,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.0"
+            "php": "7.1"
         }
     },
     "scripts": {
