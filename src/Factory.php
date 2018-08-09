@@ -13,6 +13,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
+use WyriHaximus\Psr15\Cat\CatMiddleware;
 use function Composed\package;
 
 final class Factory
@@ -65,6 +66,7 @@ final class Factory
                 ;
             })->
             withMiddleware(ResponseTime::class)->
+            withMiddleware(CatMiddleware::class)->
             withMiddleware(Expires::class, [$expires]);
 
         if (isset($options['hsts']) && $options['hsts'] === true) {

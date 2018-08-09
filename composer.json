@@ -19,7 +19,8 @@
         "middlewares/https": "^1.1",
         "middlewares/response-time": "^1.0",
         "middlewares/uuid": "^1.0",
-        "psr/log": "^1.0"
+        "psr/log": "^1.0",
+        "wyrihaximus/psr-15-cat": "^1.0.1"
     },
     "require-dev": {
         "api-clients/test-utilities": "^4.2",
