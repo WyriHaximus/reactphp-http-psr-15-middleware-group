@@ -13,6 +13,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
+use WyriHaximus\Psr15\Cat\CatMiddleware;
 use function Composed\package;
 
 final class Factory
@@ -24,7 +25,7 @@ final class Factory
         'proxy' => [
             '127.0.0.1',
         ],
-        'access_log_format' => '%a %l %u %t "%r" %>s %b "%{Referer}i" "%{User-Agent}i"',
+        'access_log_format' => '%a %l %u %Dms "%r" %>s %b "%{Referer}i" "%{User-Agent}i"',
     ];
 
     public static function create(LoopInterface $loop, LoggerInterface $logger, array $options = []): GroupedPSR15Middleware
@@ -65,6 +66,7 @@ final class Factory
                 ;
             })->
             withMiddleware(ResponseTime::class)->
+            withMiddleware(CatMiddleware::class)->
             withMiddleware(Expires::class, [$expires]);
 
         if (isset($options['hsts']) && $options['hsts'] === true) {
