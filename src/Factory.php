@@ -66,7 +66,7 @@ final class Factory
                 ;
             })->
             withMiddleware(ResponseTime::class)->
-            withMiddleware(CatMiddleware::class)->
+            withMiddleware(CatMiddleware::class, [true])->
             withMiddleware(Expires::class, [$expires]);
 
         if (isset($options['hsts']) && $options['hsts'] === true) {
