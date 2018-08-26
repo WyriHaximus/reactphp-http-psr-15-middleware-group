@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6202cc8097b8b3befeb41107aafc2d3a",
+    "content-hash": "ed0e62d1a994b18899616a5f4c9a5053",
     "packages": [
         {
             "name": "for/http-middleware-psr15-adapter",
@@ -1610,6 +1610,91 @@
                 "react"
             ],
             "time": "2017-10-17T22:57:04+00:00"
+        },
+        {
+            "name": "wyrihaximus/psr-15-cat",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-psr-15-cat.git",
+                "reference": "65981fa4b6f6825207177b94435a654d649ed18b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-psr-15-cat/zipball/65981fa4b6f6825207177b94435a654d649ed18b",
+                "reference": "65981fa4b6f6825207177b94435a654d649ed18b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "psr/http-server-middleware": "^1.0",
+                "wyrihaximus/psr-7-ascii-headers": "^1.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.3",
+                "zendframework/zend-diactoros": "^1.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Psr15\\Cat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "CAT!",
+            "time": "2018-08-25T23:32:01+00:00"
+        },
+        {
+            "name": "wyrihaximus/psr-7-ascii-headers",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-psr-7-ascii-headers.git",
+                "reference": "68c62459e66f964321d026b135296e8a9d3fd677"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-psr-7-ascii-headers/zipball/68c62459e66f964321d026b135296e8a9d3fd677",
+                "reference": "68c62459e66f964321d026b135296e8a9d3fd677",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.2",
+                "ringcentral/psr7": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Add ASCII art to PSR-7 message headers",
+            "time": "2018-08-10T16:51:40+00:00"
         }
     ],
     "packages-dev": [
