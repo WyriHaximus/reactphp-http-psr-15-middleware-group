@@ -339,16 +339,16 @@
         },
         {
             "name": "middlewares/access-log",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/middlewares/access-log.git",
-                "reference": "648dcd458d12118f2d566332398c63be7867d54e"
+                "reference": "fb8a0fb821552b9761f7ba18db7f17c031b75065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/middlewares/access-log/zipball/648dcd458d12118f2d566332398c63be7867d54e",
-                "reference": "648dcd458d12118f2d566332398c63be7867d54e",
+                "url": "https://api.github.com/repos/middlewares/access-log/zipball/fb8a0fb821552b9761f7ba18db7f17c031b75065",
+                "reference": "fb8a0fb821552b9761f7ba18db7f17c031b75065",
                 "shasum": ""
             },
             "require": {
@@ -358,9 +358,9 @@
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
-                "middlewares/utils": "^1.0",
+                "middlewares/utils": "^2.1",
                 "monolog/monolog": "^1.21",
-                "phpunit/phpunit": "^6.0",
+                "phpunit/phpunit": "^6.0|^7.0",
                 "squizlabs/php_codesniffer": "^3.0",
                 "zendframework/zend-diactoros": "^1.3"
             },
@@ -386,7 +386,7 @@
                 "psr-7",
                 "server"
             ],
-            "time": "2018-01-27T20:08:29+00:00"
+            "time": "2018-08-04T10:41:44+00:00"
         },
         {
             "name": "middlewares/cache",
