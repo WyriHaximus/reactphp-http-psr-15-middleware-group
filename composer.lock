@@ -805,24 +805,24 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.5",
+            "version": "v4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce"
+                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
-                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.5"
+                "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0|~5.0"
+                "phpunit/phpunit": "^6.5 || ^7.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -830,7 +830,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -852,7 +852,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-02-28T20:30:58+00:00"
+            "time": "2018-07-15T17:25:16+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1755,23 +1755,64 @@
     ],
     "packages-dev": [
         {
-            "name": "api-clients/test-utilities",
-            "version": "5.0.0",
+            "name": "api-clients/cs-fixer-config",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-api-clients/test-utilities.git",
-                "reference": "372f1328e664e50ee659a92e47ee46c4b3b8a2fe"
+                "url": "https://github.com/php-api-clients/cs-fixer-config.git",
+                "reference": "fadf5d8c64508f5af241201217a57b6646768cda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/test-utilities/zipball/372f1328e664e50ee659a92e47ee46c4b3b8a2fe",
-                "reference": "372f1328e664e50ee659a92e47ee46c4b3b8a2fe",
+                "url": "https://api.github.com/repos/php-api-clients/cs-fixer-config/zipball/fadf5d8c64508f5af241201217a57b6646768cda",
+                "reference": "fadf5d8c64508f5af241201217a57b6646768cda",
                 "shasum": ""
             },
             "require": {
+                "friendsofphp/php-cs-fixer": "^2.5",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ApiClients\\Tools\\CsFixerConfig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "friendsofphp/php-cs-fixer config",
+            "time": "2018-09-01T22:35:26+00:00"
+        },
+        {
+            "name": "api-clients/test-utilities",
+            "version": "5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-api-clients/test-utilities.git",
+                "reference": "109b0f894ea630e0bf53901945e2760285356332"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-api-clients/test-utilities/zipball/109b0f894ea630e0bf53901945e2760285356332",
+                "reference": "109b0f894ea630e0bf53901945e2760285356332",
+                "shasum": ""
+            },
+            "require": {
+                "api-clients/cs-fixer-config": "^1.0",
                 "clue/block-react": "^1.1",
                 "friendsofphp/php-cs-fixer": "^2.5",
-                "infection/infection": "^0.8.2",
+                "infection/infection": "^0.9.1",
                 "jakub-onderka/php-console-highlighter": "^0.3.2",
                 "jakub-onderka/php-parallel-lint": "^0.9.2",
                 "localheinz/composer-normalize": "^0.1.0",
@@ -1795,7 +1836,7 @@
                 }
             ],
             "description": "Test utilities for api-clients packages",
-            "time": "2018-05-21T14:30:27+00:00"
+            "time": "2018-09-01T22:48:37+00:00"
         },
         {
             "name": "clue/block-react",
@@ -1970,16 +2011,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "e37cbd80da64afe314c72de8d2d2fec0e40d9373"
+                "reference": "b8e9745fb9b06ea6664d8872c4505fb16df4611c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/e37cbd80da64afe314c72de8d2d2fec0e40d9373",
-                "reference": "e37cbd80da64afe314c72de8d2d2fec0e40d9373",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/b8e9745fb9b06ea6664d8872c4505fb16df4611c",
+                "reference": "b8e9745fb9b06ea6664d8872c4505fb16df4611c",
                 "shasum": ""
             },
             "require": {
@@ -2010,7 +2051,7 @@
                 "Xdebug",
                 "performance"
             ],
-            "time": "2018-08-23T12:00:19+00:00"
+            "time": "2018-08-31T19:07:57+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -2286,20 +2327,23 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.8.2",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "4a4fdb4fc39987dfda247213b5d6a687abf3304c"
+                "reference": "98de6f13821c88dd671257d27cc7dcbca0409d2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/4a4fdb4fc39987dfda247213b5d6a687abf3304c",
-                "reference": "4a4fdb4fc39987dfda247213b5d6a687abf3304c",
+                "url": "https://api.github.com/repos/infection/infection/zipball/98de6f13821c88dd671257d27cc7dcbca0409d2d",
+                "reference": "98de6f13821c88dd671257d27cc7dcbca0409d2d",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^3.0",
+                "composer/xdebug-handler": "^1.1",
+                "ext-dom": "*",
+                "nikic/php-parser": "^4.0",
+                "ocramius/package-versions": "^1.2",
                 "padraic/phar-updater": "^1.0.4",
                 "php": "^7.0",
                 "pimple/pimple": "^3.2",
@@ -2314,8 +2358,8 @@
                 "symfony/process": "3.4.2"
             },
             "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^6.1"
+                "mockery/mockery": "^1.1",
+                "phpunit/phpunit": "^6"
             },
             "bin": [
                 "bin/infection"
@@ -2335,6 +2379,24 @@
                     "name": "Maks Rafalko",
                     "email": "maks.rafalko@gmail.com",
                     "homepage": "https://twitter.com/maks_rafalko"
+                },
+                {
+                    "name": "Gert de Pagter",
+                    "homepage": "https://github.com/BackEndTea"
+                },
+                {
+                    "name": "Théo FIDRY",
+                    "email": "theo.fidry@gmail.com",
+                    "homepage": "https://twitter.com/tfidry"
+                },
+                {
+                    "name": "Oleg Zhulnev",
+                    "homepage": "https://github.com/sidz"
+                },
+                {
+                    "name": "Alexey Kopytko",
+                    "email": "alexey@kopytko.com",
+                    "homepage": "https://www.alexeykopytko.com"
                 }
             ],
             "description": "Infection is a Mutation Testing framework for PHP. The mutation adequacy score can be used to measure the effectiveness of a test set in terms of its ability to detect faults.",
@@ -2346,7 +2408,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2018-05-01T19:46:52+00:00"
+            "time": "2018-08-09T04:45:18+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2749,6 +2811,55 @@
                 "object graph"
             ],
             "time": "2018-06-11T23:09:50+00:00"
+        },
+        {
+            "name": "ocramius/package-versions",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ocramius/PackageVersions.git",
+                "reference": "4489d5002c49d55576fa0ba786f42dbb009be46f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/4489d5002c49d55576fa0ba786f42dbb009be46f",
+                "reference": "4489d5002c49d55576fa0ba786f42dbb009be46f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "php": "^7.1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.6.3",
+                "ext-zip": "*",
+                "infection/infection": "^0.7.1",
+                "phpunit/phpunit": "^7.0.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "time": "2018-02-05T13:05:30+00:00"
         },
         {
             "name": "padraic/humbug_get_contents",
@@ -3490,16 +3601,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.2",
+            "version": "7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "34705f81bddc3f505b9599a2ef96e2b4315ba9b8"
+                "reference": "1bd5629cccfb2c0a9ef5474b4ff772349e1ec898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/34705f81bddc3f505b9599a2ef96e2b4315ba9b8",
-                "reference": "34705f81bddc3f505b9599a2ef96e2b4315ba9b8",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1bd5629cccfb2c0a9ef5474b4ff772349e1ec898",
+                "reference": "1bd5629cccfb2c0a9ef5474b4ff772349e1ec898",
                 "shasum": ""
             },
             "require": {
@@ -3570,7 +3681,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-22T06:39:21+00:00"
+            "time": "2018-09-01T15:49:55+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -4240,7 +4351,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -4308,7 +4419,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -4371,16 +4482,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "2e30335e0aafeaa86645555959572fe7cea22b43"
+                "reference": "c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/2e30335e0aafeaa86645555959572fe7cea22b43",
-                "reference": "2e30335e0aafeaa86645555959572fe7cea22b43",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e",
+                "reference": "c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e",
                 "shasum": ""
             },
             "require": {
@@ -4417,11 +4528,11 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-08-18T16:52:46+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -4470,7 +4581,7 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
@@ -4697,16 +4808,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "f01fc7a4493572f7f506c49dcb50ad01fb3a2f56"
+                "reference": "86cdb930a6a855b0ab35fb60c1504cb36184f843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/f01fc7a4493572f7f506c49dcb50ad01fb3a2f56",
-                "reference": "f01fc7a4493572f7f506c49dcb50ad01fb3a2f56",
+                "url": "https://api.github.com/repos/symfony/process/zipball/86cdb930a6a855b0ab35fb60c1504cb36184f843",
+                "reference": "86cdb930a6a855b0ab35fb60c1504cb36184f843",
                 "shasum": ""
             },
             "require": {
@@ -4742,11 +4853,11 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-08-03T11:13:38+00:00"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -4795,16 +4906,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "46bc69aa91fc4ab78a96ce67873a6b0c148fd48c"
+                "reference": "b832cc289608b6d305f62149df91529a2ab3c314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/46bc69aa91fc4ab78a96ce67873a6b0c148fd48c",
-                "reference": "46bc69aa91fc4ab78a96ce67873a6b0c148fd48c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b832cc289608b6d305f62149df91529a2ab3c314",
+                "reference": "b832cc289608b6d305f62149df91529a2ab3c314",
                 "shasum": ""
             },
             "require": {
@@ -4850,7 +4961,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-08-18T16:52:46+00:00"
         },
         {
             "name": "theseer/tokenizer",
