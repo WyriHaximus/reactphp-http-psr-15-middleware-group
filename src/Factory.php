@@ -30,7 +30,7 @@ final class Factory
 
     public static function create(LoopInterface $loop, LoggerInterface $logger, array $options = []): GroupedPSR15Middleware
     {
-        $options = array_merge(self::DEFAULT_OPTIONS, $options);
+        $options = \array_merge(self::DEFAULT_OPTIONS, $options);
         $expires = require package('middlewares/cache')->getPath('src/expires_defaults.php');
         foreach ($options['extra_expires'] as $key => $value) {
             $expires[$key] = $value;
@@ -38,7 +38,7 @@ final class Factory
 
         $middleware = (new GroupedPSR15Middleware($loop))->
             withMiddleware(ClientIp::class, [], function ($clientIp) use ($options) {
-                if (count($options['proxy']) > 0) {
+                if (\count($options['proxy']) > 0) {
                     return $clientIp->proxy($options['proxy']);
                 }
 
@@ -58,9 +58,9 @@ final class Factory
                             'response-protocol-version' => $response->getProtocolVersion(),
                             'response-status-code' => $response->getStatusCode(),
                             'response-time' => $response->getHeaderLine('X-Response-Time'),
-                            'response-time-float' => substr($response->getHeaderLine('X-Response-Time'), 0, -2),
-                            'response-time-float-single-digit' => round((float)substr($response->getHeaderLine('X-Response-Time'), 0, -2), 1),
-                            'response-time-int' => (int)round((float)substr($response->getHeaderLine('X-Response-Time'), 0, -2), 0),
+                            'response-time-float' => \substr($response->getHeaderLine('X-Response-Time'), 0, -2),
+                            'response-time-float-single-digit' => \round((float)\substr($response->getHeaderLine('X-Response-Time'), 0, -2), 1),
+                            'response-time-int' => (int)\round((float)\substr($response->getHeaderLine('X-Response-Time'), 0, -2), 0),
                         ];
                     })
                 ;
