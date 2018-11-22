@@ -8,9 +8,12 @@ use PHPUnit\Framework\TestCase;
 use React\EventLoop\Factory as EventLoopFactory;
 use WyriHaximus\React\Http\PSR15MiddlewareGroup\Factory;
 
+/**
+ * @internal
+ */
 final class FactoryTest extends TestCase
 {
-    public function testReturnType()
+    public function testReturnType(): void
     {
         $loop = EventLoopFactory::create();
         $middleware = Factory::create($loop, new Logger('test-return-type'));
