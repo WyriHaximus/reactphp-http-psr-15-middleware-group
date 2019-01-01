@@ -23,7 +23,7 @@
         "wyrihaximus/psr-15-cat": "^1.0.1"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^5.0",
+        "api-clients/test-utilities": "^5.4",
         "monolog/monolog": "^1.23"
     },
     "autoload": {
